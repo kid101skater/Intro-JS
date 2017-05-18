@@ -18,3 +18,16 @@ function fizzBuzz()
         else document.write(count + " ");
     }
 }
+
+function countBs(str)
+{
+    var total = 0;
+    for (var i = 0; i < str.length; i++)
+    {
+        if (str.charAt(i) == "B")
+        {
+            total++;
+        }
+    }
+    document.write("Total B count in phrase " + str + ": " + total);
+}
