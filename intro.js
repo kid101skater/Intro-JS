@@ -21,13 +21,19 @@ function fizzBuzz()
 
 function countBs(str)
 {
+    var total = countChar(str, "B");
+    document.write("Total B count in phrase " + str + ": " + total);
+}
+
+function countChar(str, char)
+{
     var total = 0;
     for (var i = 0; i < str.length; i++)
     {
-        if (str.charAt(i) == "B")
+        if (str.charAt(i) == char)
         {
             total++;
         }
     }
-    document.write("Total B count in phrase " + str + ": " + total);
+    return total;
 }
